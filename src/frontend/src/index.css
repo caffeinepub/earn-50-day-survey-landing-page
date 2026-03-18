@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0.97 0.008 255;
+    --foreground: 0.13 0.02 254;
+    --card: 0.99 0.004 255;
+    --card-foreground: 0.13 0.02 254;
+    --popover: 0.99 0.004 255;
+    --popover-foreground: 0.13 0.02 254;
+    --primary: 0.54 0.17 142;
+    --primary-foreground: 0.99 0 0;
+    --secondary: 0.95 0.02 142;
+    --secondary-foreground: 0.54 0.17 142;
+    --muted: 0.95 0.01 255;
+    --muted-foreground: 0.47 0.04 254;
+    --accent: 0.95 0.05 142;
+    --accent-foreground: 0.4 0.15 142;
+    --destructive: 0.55 0.22 27;
+    --destructive-foreground: 0.99 0 0;
+    --border: 0.91 0.01 255;
+    --input: 0.91 0.01 255;
+    --ring: 0.54 0.17 142;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
